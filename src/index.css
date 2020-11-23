@@ -34,8 +34,8 @@ body {
 
 .app {
   background-color: #252d4a;
-  width: 25vw;
-  min-height: 20vh;
+  width: 45vw;
+  min-height: 35vh;
   height: min-content;
   border-radius: 15px;
   padding: 20px;
@@ -87,7 +87,7 @@ body {
 }
 
 button {
-  width: 10vw;
+  width: 18vw;
   
   color: #ffffff;
   background-color: #252d4a;
@@ -129,13 +129,13 @@ button svg {
 @media(min-width: 768px) and (max-width:991px)
 {
 .md{
-  font-size: 15px;
+  font-size:20px;
 
 }
 }
 
 @media(max-width:767px){
 .sm{
-  font-size: 5px;
+  font-size: 15px;
 }
 }
