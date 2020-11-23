@@ -34,7 +34,7 @@ body {
 
 .app {
   background-color: #252d4a;
-  width: 20vw;
+  width: 25vw;
   min-height: 20vh;
   height: min-content;
   border-radius: 15px;
@@ -87,8 +87,8 @@ body {
 }
 
 button {
-  width: 100%;
-  font-size: 16px;
+  width: 10vw;
+  
   color: #ffffff;
   background-color: #252d4a;
   border-radius: 15px;
@@ -118,4 +118,24 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+@media (min-width:992px){
+
+  .xl{
+    font-size:25px;
+  }
+
+}
+@media(min-width: 768px) and (max-width:991px)
+{
+.md{
+  font-size: 15px;
+
+}
+}
+
+@media(max-width:767px){
+.sm{
+  font-size: 5px;
+}
 }

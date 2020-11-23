@@ -70,23 +70,25 @@ const resetvalues=()=>{
 			{/* HINT: replace "false" with logic to display the 
       score when the user has answered all the questions */}
 			{score ? (
-			<>	<div className='score-section'>You scored {mark} out of {questions.length}
-       <button onClick={resetvalues}>RESET</button>
+			<>	<div className='score-section sm md xl'>You scored {mark} out of {questions.length}
+       <button className='sm md xl' onClick={resetvalues}>RESET</button>
       </div>
        
         </>
 			) : (
 				<>
-					<div className='question-section'>
-						<div className='question-count'>
-      <span>Question {count + 1}</span>/{questions.length}
+        <div className='sm md xl'>
+					<div className='question-section  '>
+						<div className='question-count  '>
+     Question {count + 1}/{questions.length}
 						</div>
-						<div className='question-text'>{questions[count].questionText}</div>
+            </div>
+						<div className='question-text sm md xl'>{questions[count].questionText}</div>
 					</div>
-					<div className='answer-section'>
+					<div className='answer-section sm md xl'>
 					{
             questions[count].answerOptions.map((answer)=>{
-              return(<button onClick={()=>handleClick(answer.isCorrect)}>{answer.answerText}</button>);
+              return(<button className='sm md xl' onClick={()=>handleClick(answer.isCorrect)}>{answer.answerText}</button>);
              
             })
            
